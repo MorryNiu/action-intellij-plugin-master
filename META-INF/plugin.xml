@@ -1,0 +1,43 @@
+<idea-plugin version="2">
+  <id>cn.com.nio.fellow.ideaplugin.action</id>
+  <name>Action Intellij Plugin</name>
+  <version>1.0</version>
+  <vendor email="xinyao.niu@nio.com" url="https://www.nio.com/">action-intellij-plugin</vendor>
+
+  <description><![CDATA[
+    Provides actions which allow you quickly move around the action.
+    ]]></description>
+
+  <change-notes><![CDATA[
+      First version released.
+    ]]>
+  </change-notes>
+
+  <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+  <idea-version since-build="135.000"/>
+
+  <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+    <codeInsight.lineMarkerProvider language="JAVA"
+                                    implementationClass="cn.com.nio.fellow.ideaplugin.action.ActionLineMarkerProvider"/>
+  </extensions>
+
+  <application-components>
+    <!-- Add your application components here -->
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+  </project-components>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>
