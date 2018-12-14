@@ -140,13 +140,11 @@ public class ShowUsagesAction extends AnAction implements PopupAction {
         myUsageViewSettings = new UsageViewSettings();
         myUsageViewSettings.loadState(usageViewSettings);
 
-/*
         myUsageViewSettings.GROUP_BY_FILE_STRUCTURE = false;
         myUsageViewSettings.GROUP_BY_MODULE = false;
         myUsageViewSettings.GROUP_BY_PACKAGE = false;
         myUsageViewSettings.GROUP_BY_USAGE_TYPE = false;
         myUsageViewSettings.GROUP_BY_SCOPE = false;
-*/
     }
 
 

@@ -4,6 +4,7 @@ import com.intellij.codeHighlighting.Pass;
 import com.intellij.codeInsight.daemon.GutterIconNavigationHandler;
 import com.intellij.codeInsight.daemon.LineMarkerInfo;
 import com.intellij.codeInsight.daemon.LineMarkerProvider;
+import com.intellij.find.findUsages.FindUsagesManager;
 import com.intellij.openapi.editor.markup.GutterIconRenderer;
 import com.intellij.openapi.fileEditor.OpenFileDescriptor;
 import com.intellij.openapi.project.Project;
@@ -11,8 +12,13 @@ import com.intellij.openapi.util.IconLoader;
 import com.intellij.psi.*;
 import com.intellij.psi.search.GlobalSearchScope;
 import com.intellij.psi.search.searches.ClassInheritorsSearch;
+import com.intellij.psi.search.searches.ReferencesSearch;
 import com.intellij.psi.util.PsiUtilBase;
 import com.intellij.ui.awt.RelativePoint;
+import com.intellij.usageView.UsageInfo;
+import com.intellij.usages.*;
+import com.intellij.usages.impl.UsageViewManagerImpl;
+import com.intellij.util.Query;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -45,22 +51,43 @@ public class ActionLineMarkerProvider implements LineMarkerProvider {
                     // define the scope we are currently working in
                     JavaPsiFacade javaPsiFacade = JavaPsiFacade.getInstance(project);
                     PsiClass actionClass = javaPsiFacade.findClass("cn.com.nio.fellow.module.core.launcher.ModuleRouter", GlobalSearchScope.allScope(project));
+                    String path = PsiUtils.getAnnotationValue(psiElement, "path").replaceAll("[^a-zA-Z0-9._]+", "");
+
+
 
                     if(actionClass != null) {
-                        PsiMethod postMethod = actionClass.findMethodsByName("buildAction", false)[0];
-                        PsiParameter par = postMethod.getParameterList().getParameters()[0];
-                        diagnose.add("Method name: " + postMethod.getName());
-                        diagnose.add("annotation number: " + postMethod.getAnnotations().length);
-                        diagnose.add("post method parameterList: " + postMethod.getParameterList().getText());
+                        PsiMethod buildMethod = actionClass.findMethodsByName("buildAction", false)[0];
+                        Filter buildFilter = new BuildFilter(path);
+
+                        //search reference
+                        Query<PsiReference> search = ReferencesSearch.search(buildMethod);
+                        Collection<PsiReference> psiReferences = search.findAll();
+                        ArrayList<Usage> usages = new ArrayList<>();
+
+                        for(PsiReference r:psiReferences){
+                            UsageInfo usageInfo = new UsageInfo(r);
+                            Usage usage = new UsageInfo2UsageAdapter(usageInfo);
+                            // show or not
+                            if(buildFilter.shouldShow(usage)) {
+                                usages.add(usage);
+                            }
+                        }
+
+
+                        PsiParameter par = buildMethod.getParameterList().getParameters()[0];
+                        diagnose.add("Method name: " + buildMethod.getName());
+                        diagnose.add("annotation number: " + buildMethod.getAnnotations().length);
+                        diagnose.add("post method parameterList: " + buildMethod.getParameterList().getText());
                         diagnose.add("pars: ");
                         diagnose.add("passed " + passed + " times.");
+                        diagnose.add("usages found: " + usages.size());
+                        diagnose.add("path: " + path);
 
-                        for(PsiParameter p: postMethod.getParameterList().getParameters()){
-                            diagnose.add(p.getText());
-                        }
-                        // search and display the usage of the target action
+                        UsageViewManager.getInstance(project).showUsages(UsageTarget.EMPTY_ARRAY, usages.toArray(new Usage[usages.size()]), new UsageViewPresentation());
 
-                        new ShowUsagesAction(new SenderFilter(par.getText())).startFindUsages(postMethod, new RelativePoint(e), PsiUtilBase.findEditor(psiElement), MAX_USAGES, diagnolise(diagnose));
+                        //usages.get(0).navigate(true);
+
+                        new ShowUsagesAction(new SenderFilter(par.getText())).startFindUsages(buildMethod, new RelativePoint(e), PsiUtilBase.findEditor(psiElement), MAX_USAGES, diagnolise(diagnose));
                     }
                 }
             };
@@ -93,11 +120,8 @@ public class ActionLineMarkerProvider implements LineMarkerProvider {
                             JavaPsiFacade javaPsiFacade = JavaPsiFacade.getInstance(project);
                             String target = "cn.com.nio.fellow." + expression.getArgumentList().getText().substring(2, expression.getArgumentList().getText().length()-2).split("/")[0] + ".action";
 
-                            // TODO: tring to find all classes under target dir, but it seems like no function can do that
-                            PsiClass targetClass = javaPsiFacade.findClass("cn.com.nio.fellow.order.action.OrderPersonConfirmLaunchAction", GlobalSearchScope.allScope(project));
                             // package we are interested in
                             PsiPackage targetClasses = javaPsiFacade.findPackage(target);
-                            PsiPackage targetPackage = javaPsiFacade.findPackage("cn.com.nio.fellow.order.action");
 
                             //PsiUtils.getAnnotationValue(targetClass, "path");
 /*
