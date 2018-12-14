@@ -4,20 +4,17 @@ import com.intellij.codeHighlighting.Pass;
 import com.intellij.codeInsight.daemon.GutterIconNavigationHandler;
 import com.intellij.codeInsight.daemon.LineMarkerInfo;
 import com.intellij.codeInsight.daemon.LineMarkerProvider;
-import com.intellij.find.findUsages.FindUsagesManager;
 import com.intellij.openapi.editor.markup.GutterIconRenderer;
 import com.intellij.openapi.fileEditor.OpenFileDescriptor;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.util.IconLoader;
 import com.intellij.psi.*;
 import com.intellij.psi.search.GlobalSearchScope;
-import com.intellij.psi.search.searches.ClassInheritorsSearch;
 import com.intellij.psi.search.searches.ReferencesSearch;
 import com.intellij.psi.util.PsiUtilBase;
 import com.intellij.ui.awt.RelativePoint;
 import com.intellij.usageView.UsageInfo;
 import com.intellij.usages.*;
-import com.intellij.usages.impl.UsageViewManagerImpl;
 import com.intellij.util.Query;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -85,8 +82,6 @@ public class ActionLineMarkerProvider implements LineMarkerProvider {
 
                         UsageViewManager.getInstance(project).showUsages(UsageTarget.EMPTY_ARRAY, usages.toArray(new Usage[usages.size()]), new UsageViewPresentation());
 
-                        //usages.get(0).navigate(true);
-
                         new ShowUsagesAction(new SenderFilter(par.getText())).startFindUsages(buildMethod, new RelativePoint(e), PsiUtilBase.findEditor(psiElement), MAX_USAGES, diagnolise(diagnose));
                     }
                 }
@@ -141,7 +136,7 @@ public class ActionLineMarkerProvider implements LineMarkerProvider {
                             for(PsiClass c: targetClasses.getClasses()){
                                 run++;
                                 clses += PsiUtils.getAnnotationValue(c,"path") + "\n";
-                                if(PsiUtils.getAnnotationValue(c,"path").replaceAll("[^a-zA-Z0-9._]+", "").equals(processOutput(expression.getArgumentList().getText()))){
+                                if(processOutput(PsiUtils.getAnnotationValue(c,"path")).equals(processOutput(expression.getArgumentList().getText()))){
                                     temp = c;
                                     navi = true;
                                     break;
@@ -149,9 +144,10 @@ public class ActionLineMarkerProvider implements LineMarkerProvider {
                             }
 
 
+
                             new OpenFileDescriptor(temp.getProject(), temp.getContainingFile().getVirtualFile(), 1,0).navigate(true);
 
-                            new ShowUsagesAction(new ReceiverFilter()).startFindUsages(temp, new RelativePoint(e), PsiUtilBase.findEditor(psiElement), MAX_USAGES,
+    /*                        new ShowUsagesAction(new ReceiverFilter()).startFindUsages(temp, new RelativePoint(e), PsiUtilBase.findEditor(psiElement), MAX_USAGES,
                                     "Arglist: " + expression.getArgumentList().getText().substring(2, expression.getArgumentList().getText().length()-2) + "\n"
                                     + "processed: " + processOutput(expression.getArgumentList().getText()) + "\n"
                                     + "ExpressionName:" + expression.getText() + "\n"
@@ -170,7 +166,7 @@ public class ActionLineMarkerProvider implements LineMarkerProvider {
                                     //+ "random shit2: " + targetClass.getImplementsList().getReferencedTypes()[0].resolve().getText()
                                     //+ "target package: " + (targetPackage == null? "null":targetPackage.getClasses().length)
 
-                            );
+                            );*/
                         }
                     }
                 }
@@ -183,7 +179,9 @@ public class ActionLineMarkerProvider implements LineMarkerProvider {
      * @return a processed string
      */
     public static String processOutput(String input){
-        input = input.substring(input.indexOf("/"));
+        if(input.contains("/")) {
+            input = input.substring(input.indexOf("/"));
+        }
         return input.replaceAll("[^a-zA-Z0-9._]+", "");
     }
 
