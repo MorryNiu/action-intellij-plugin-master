@@ -1,5 +1,6 @@
 package cn.com.nio.fellow.ideaplugin.action;
 
+import com.intellij.CommonBundle;
 import com.intellij.codeHighlighting.Pass;
 import com.intellij.codeInsight.daemon.GutterIconNavigationHandler;
 import com.intellij.codeInsight.daemon.LineMarkerInfo;
@@ -7,6 +8,10 @@ import com.intellij.codeInsight.daemon.LineMarkerProvider;
 import com.intellij.openapi.editor.markup.GutterIconRenderer;
 import com.intellij.openapi.fileEditor.OpenFileDescriptor;
 import com.intellij.openapi.project.Project;
+import com.intellij.openapi.ui.Messages;
+import com.intellij.openapi.ui.popup.ComponentPopupBuilder;
+import com.intellij.openapi.ui.popup.JBPopup;
+import com.intellij.openapi.ui.popup.JBPopupFactory;
 import com.intellij.openapi.util.IconLoader;
 import com.intellij.psi.*;
 import com.intellij.psi.search.GlobalSearchScope;
@@ -14,6 +19,7 @@ import com.intellij.psi.search.searches.ReferencesSearch;
 import com.intellij.psi.util.PsiUtilBase;
 import com.intellij.ui.awt.RelativePoint;
 import com.intellij.usageView.UsageInfo;
+import com.intellij.usageView.UsageViewUtil;
 import com.intellij.usages.*;
 import com.intellij.util.Query;
 import org.jetbrains.annotations.NotNull;
@@ -50,8 +56,6 @@ public class ActionLineMarkerProvider implements LineMarkerProvider {
                     PsiClass actionClass = javaPsiFacade.findClass("cn.com.nio.fellow.module.core.launcher.ModuleRouter", GlobalSearchScope.allScope(project));
                     String path = PsiUtils.getAnnotationValue(psiElement, "path").replaceAll("[^a-zA-Z0-9._]+", "");
 
-
-
                     if(actionClass != null) {
                         PsiMethod buildMethod = actionClass.findMethodsByName("buildAction", false)[0];
                         Filter buildFilter = new BuildFilter(path);
@@ -70,7 +74,6 @@ public class ActionLineMarkerProvider implements LineMarkerProvider {
                             }
                         }
 
-
                         PsiParameter par = buildMethod.getParameterList().getParameters()[0];
                         diagnose.add("Method name: " + buildMethod.getName());
                         diagnose.add("annotation number: " + buildMethod.getAnnotations().length);
@@ -80,9 +83,12 @@ public class ActionLineMarkerProvider implements LineMarkerProvider {
                         diagnose.add("usages found: " + usages.size());
                         diagnose.add("path: " + path);
 
-                        UsageViewManager.getInstance(project).showUsages(UsageTarget.EMPTY_ARRAY, usages.toArray(new Usage[usages.size()]), new UsageViewPresentation());
+                        UsageViewPresentation presentation = new UsageViewPresentation();
+                        presentation.setContextText(path);
 
-                        new ShowUsagesAction(new SenderFilter(par.getText())).startFindUsages(buildMethod, new RelativePoint(e), PsiUtilBase.findEditor(psiElement), MAX_USAGES, diagnolise(diagnose));
+                        UsageViewManager.getInstance(project).showUsages(UsageTarget.EMPTY_ARRAY, usages.toArray(new Usage[0]), presentation);
+                        
+                        //new ShowUsagesAction(new SenderFilter(par.getText())).startFindUsages(buildMethod, new RelativePoint(e), PsiUtilBase.findEditor(psiElement), MAX_USAGES, diagnolise(diagnose));
                     }
                 }
             };
@@ -143,11 +149,12 @@ public class ActionLineMarkerProvider implements LineMarkerProvider {
                                 }
                             }
 
+                            new OpenFileDescriptor(project, temp.getContainingFile().getVirtualFile(), 1,0).navigate(true);
 
+                           /* Messages.showMessageDialog(project, "finish",
+                                    CommonBundle.getErrorTitle(), Messages.getErrorIcon());*/
 
-                            new OpenFileDescriptor(temp.getProject(), temp.getContainingFile().getVirtualFile(), 1,0).navigate(true);
-
-    /*                        new ShowUsagesAction(new ReceiverFilter()).startFindUsages(temp, new RelativePoint(e), PsiUtilBase.findEditor(psiElement), MAX_USAGES,
+                            new ShowUsagesAction(new ReceiverFilter()).startFindUsages(temp, new RelativePoint(e), PsiUtilBase.findEditor(psiElement), MAX_USAGES,
                                     "Arglist: " + expression.getArgumentList().getText().substring(2, expression.getArgumentList().getText().length()-2) + "\n"
                                     + "processed: " + processOutput(expression.getArgumentList().getText()) + "\n"
                                     + "ExpressionName:" + expression.getText() + "\n"
@@ -166,7 +173,7 @@ public class ActionLineMarkerProvider implements LineMarkerProvider {
                                     //+ "random shit2: " + targetClass.getImplementsList().getReferencedTypes()[0].resolve().getText()
                                     //+ "target package: " + (targetPackage == null? "null":targetPackage.getClasses().length)
 
-                            );*/
+                            );
                         }
                     }
                 }

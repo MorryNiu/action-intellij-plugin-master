@@ -2,7 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b57f450c-4362-4863-98b7-460667977736" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/action-intellij-plugin.jar" beforeDir="false" afterPath="$PROJECT_DIR$/action-intellij-plugin.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ActionLineMarkerProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ActionLineMarkerProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/BuildFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/BuildFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$11$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$12$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$13.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$14.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$15.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$15.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$16.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$16.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$17.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$17.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$18.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$19$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$19$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$19.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$9$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$9$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$MyModel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$MyModel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$MyModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$MyModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$MySpeedSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$MySpeedSearch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$MyTable$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$MyTable$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$MyTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$MyTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$StringNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction$StringNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/action-intellij-plugin/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/ActionLineMarkerProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/ActionLineMarkerProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/BuildFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/BuildFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction.java" afterDir="false" />
     </list>
     <ignored path="eventbus3-intellij-plugin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,8 +59,70 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/ActionLineMarkerProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="144" column="45" lean-forward="true" selection-start-line="144" selection-start-column="45" selection-end-line="144" selection-end-column="45" />
+            <state relative-caret-position="851">
+              <caret line="83" column="31" lean-forward="true" selection-start-line="83" selection-start-column="31" selection-end-line="83" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/PsiUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1081">
+              <caret line="47" column="50" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/usages/UsageViewPresentation.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1518">
+              <caret line="77" column="30" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/BuildFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="621">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/action-intellij-plugin.iml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/Filter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/PingEDT.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/CompositeActiveComponent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="39" column="54" selection-start-line="39" selection-start-column="54" selection-end-line="39" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -36,37 +133,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="701">
-              <caret line="237" lean-forward="true" selection-start-line="237" selection-end-line="237" />
-              <folding>
-                <element signature="e#20083#20084#0" expanded="true" />
-                <element signature="e#20111#20112#0" expanded="true" />
-                <element signature="e#20203#20204#0" expanded="true" />
-                <element signature="e#20248#20249#0" expanded="true" />
-                <element signature="e#45876#45877#0" expanded="true" />
-                <element signature="e#45940#45941#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="2137">
+              <caret line="187" column="9" lean-forward="true" selection-start-line="187" selection-start-column="9" selection-end-line="187" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/BuildFilter.java">
+        <entry file="file://$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/ShowUsagesTableCellRenderer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="554">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/CompositeActiveComponent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="35" column="31" lean-forward="true" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="851">
+              <caret line="74" column="38" selection-start-line="74" selection-start-column="38" selection-end-line="74" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -103,6 +180,7 @@
       <find>usage</find>
       <find>filter</find>
       <find>eventclass</find>
+      <find>Usage</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -126,10 +204,10 @@
         <option value="$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/ShowUsagesTableCellRenderer.java" />
         <option value="$PROJECT_DIR$/META-INF/plugin.xml" />
         <option value="$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/buildFilter.java" />
-        <option value="$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction.java" />
         <option value="$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/SenderFilter.java" />
         <option value="$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/BuildFilter.java" />
         <option value="$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/ActionLineMarkerProvider.java" />
+        <option value="$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction.java" />
       </list>
     </option>
   </component>
@@ -152,24 +230,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="eventbus3-intellij-plugin" type="b2602c69:ProjectViewProjectNode" />
               <item name="action-intellij-plugin-master" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="eventbus3-intellij-plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="action-intellij-plugin-master" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="eventbus3-intellij-plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="action-intellij-plugin-master" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="eventbus3-intellij-plugin" type="b2602c69:ProjectViewProjectNode" />
@@ -182,14 +248,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="action" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="eventbus3-intellij-plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -197,10 +261,10 @@
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="eventbus3-intellij-plugin" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544767679511" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545991302389" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
@@ -358,8 +422,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32981133" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.329927" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32919708" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32627738" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -409,57 +473,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/util.jar!/com/intellij/util/ArrayFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/java-api.jar!/com/intellij/psi/PsiPrimitiveType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/usages/UsageInfo2UsageAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#28445#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/java-impl.jar!/META-INF/JavaPsiPlugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1900">
-          <caret line="95" column="4" selection-start-line="95" selection-start-column="4" selection-end-line="95" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/java-api.jar!/com/intellij/psi/PsiParameter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/java-api.jar!/com/intellij/psi/PsiElementFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/util.jar!/com/intellij/openapi/util/UserDataHolder.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -696,13 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/ShowUsagesTableCellRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/java-api.jar!/com/intellij/psi/PsiClass.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="433">
@@ -710,27 +716,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/META-INF/plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="851">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/com/intellij/find/findUsages/FindUsagesHandler.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1585">
           <caret line="84" column="24" lean-forward="true" selection-start-line="84" selection-start-column="24" selection-end-line="84" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/Filter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -745,17 +734,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/PingEDT.java">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/openapi/ui/popup/JBPopupFactory.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/PsiUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="892">
-          <caret line="47" column="50" lean-forward="true" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
+        <state relative-caret-position="448">
+          <caret line="248" column="42" selection-start-line="248" selection-start-column="42" selection-end-line="248" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -766,45 +748,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/BuildFilter.java">
+    <entry file="file://$PROJECT_DIR$/resources/icons/icon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/icons/icon_r.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/META-INF/plugin.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="851">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction.java">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/usages/UsageViewManager.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="701">
-          <caret line="237" lean-forward="true" selection-start-line="237" selection-end-line="237" />
+        <state relative-caret-position="448">
+          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/PsiUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1081">
+          <caret line="47" column="50" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/usages/UsageViewPresentation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1518">
+          <caret line="77" column="30" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/BuildFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action-intellij-plugin.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/Filter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
           <folding>
-            <element signature="e#20083#20084#0" expanded="true" />
-            <element signature="e#20111#20112#0" expanded="true" />
-            <element signature="e#20203#20204#0" expanded="true" />
-            <element signature="e#20248#20249#0" expanded="true" />
-            <element signature="e#45876#45877#0" expanded="true" />
-            <element signature="e#45940#45941#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/PingEDT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/ShowUsagesTableCellRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="851">
+          <caret line="74" column="38" selection-start-line="74" selection-start-column="38" selection-end-line="74" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/CompositeActiveComponent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="35" column="31" lean-forward="true" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+        <state relative-caret-position="506">
+          <caret line="39" column="54" selection-start-line="39" selection-start-column="54" selection-end-line="39" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/ShowUsagesAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2137">
+          <caret line="187" column="9" lean-forward="true" selection-start-line="187" selection-start-column="9" selection-end-line="187" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/com/nio/fellow/ideaplugin/action/ActionLineMarkerProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="144" column="45" lean-forward="true" selection-start-line="144" selection-start-column="45" selection-end-line="144" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="851">
+          <caret line="83" column="31" lean-forward="true" selection-start-line="83" selection-start-column="31" selection-end-line="83" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -865,6 +897,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

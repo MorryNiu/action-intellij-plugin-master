@@ -237,8 +237,8 @@ public class ShowUsagesAction extends AnAction implements PopupAction {
 
 
         // test case
-        Messages.showMessageDialog(project, popUp,
-                CommonBundle.getErrorTitle(), Messages.getErrorIcon());
+//        Messages.showMessageDialog(project, popUp,
+////                CommonBundle.getErrorTitle(), Messages.getErrorIcon());
 
         showElementUsages(handler, editor, popupPosition, maxUsages, getDefaultOptions(handler));
     }
@@ -266,20 +266,19 @@ public class ShowUsagesAction extends AnAction implements PopupAction {
         final Project project = handler.getProject();
         UsageViewManager manager = UsageViewManager.getInstance(project);
         FindUsagesManager findUsagesManager = ((FindManagerImpl) FindManager.getInstance(project)).getFindUsagesManager();
+
         final UsageViewPresentation presentation = findUsagesManager.createPresentation(handler, options);
         presentation.setDetachedMode(true);
         final UsageViewImpl usageView = (UsageViewImpl) manager.createUsageView(UsageTarget.EMPTY_ARRAY, Usage.EMPTY_ARRAY, presentation, null);
 
-        Disposer.register(usageView, new Disposable() {
-            @Override
-            public void dispose() {
-                myUsageViewSettings.loadState(usageViewSettings);
-                usageViewSettings.loadState(savedGlobalSettings);
-            }
+        Disposer.register(usageView, () -> {
+            myUsageViewSettings.loadState(usageViewSettings);
+            usageViewSettings.loadState(savedGlobalSettings);
         });
 
-        final List<Usage> usages = new ArrayList<Usage>();
-        final Set<UsageNode> visibleNodes = new LinkedHashSet<UsageNode>();
+        final List<Usage> usages = new ArrayList<>();
+        final Set<UsageNode> visibleNodes = new LinkedHashSet<>();
+
         UsageInfoToUsageConverter.TargetElementsDescriptor descriptor =
                 new UsageInfoToUsageConverter.TargetElementsDescriptor(handler.getPrimaryElements(), handler.getSecondaryElements());
 
@@ -291,7 +290,7 @@ public class ShowUsagesAction extends AnAction implements PopupAction {
             visibleNodes.add(MORE_USAGES_SEPARATOR_NODE);
         }
 
-        addUsageNodes(usageView.getRoot(), usageView, new ArrayList<UsageNode>());
+        addUsageNodes(usageView.getRoot(), usageView, new ArrayList<>());
 
         TableScrollingUtil.installActions(table);
 
@@ -341,12 +340,7 @@ public class ShowUsagesAction extends AnAction implements PopupAction {
         });
 
         final MessageBusConnection messageBusConnection = project.getMessageBus().connect(usageView);
-        messageBusConnection.subscribe(UsageFilteringRuleProvider.RULES_CHANGED, new Runnable() {
-            @Override
-            public void run() {
-                pingEDT.ping();
-            }
-        });
+        messageBusConnection.subscribe(UsageFilteringRuleProvider.RULES_CHANGED, () -> pingEDT.ping());
 
 
         Processor<Usage> collect = new Processor<Usage>() {
@@ -612,6 +606,7 @@ public class ShowUsagesAction extends AnAction implements PopupAction {
                                      @NotNull final UsageViewPresentation presentation,
                                      @NotNull final AsyncProcessIcon processIcon,
                                      boolean hadMoreSeparator) {
+
         table.setRowHeight(PlatformIcons.CLASS_ICON.getIconHeight() + 2);
         table.setShowGrid(false);
         table.setShowVerticalLines(false);
